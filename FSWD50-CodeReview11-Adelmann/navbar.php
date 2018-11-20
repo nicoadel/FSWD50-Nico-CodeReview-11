@@ -33,6 +33,15 @@ session_start();
                       ';
                       }
                       ?>
+                      <?php
+                     if (isset($_SESSION['userId']))
+                      {
+                        echo '<li class="nav-item">
+                      <a class="nav-link" href="update.php">Edit-Restaurants</a>
+                    </li>
+                      ';
+                      }
+                      ?>
                     <?php
                      if (isset($_SESSION['userId']))
                       {
@@ -42,6 +51,7 @@ session_start();
                       ';
                       }
                       ?>
+
                        <?php
                      if (isset($_SESSION['userId']))
                       {
